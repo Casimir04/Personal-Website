@@ -291,6 +291,12 @@
         background-color: #252424;
       }
 
+      img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+      }
+
       .text-con {
         display: flex;
         flex-direction: column;
