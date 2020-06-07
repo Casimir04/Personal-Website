@@ -416,9 +416,19 @@
   grid-template-columns: 13.3333vw 24.4444vw;
   column-gap: 2.2222vw;
   align-items: center;
+
   p {
     color: #fff;
     font-weight: 500;
+  }
+}
+
+.whatsapp-sec {
+  @extend .email-sec;
+  background-color: #42b250;
+  img {
+    width: 33px;
+    height: 33px;
   }
 }
 
@@ -530,6 +540,10 @@
     padding: 0 50px;
     grid-template-columns: 66.665px 122.22px;
     column-gap: 11.11px;
+
+    p {
+      font-weight: bold;
+    }
   }
 
   .back-to-top a p {

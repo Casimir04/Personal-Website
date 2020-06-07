@@ -477,7 +477,7 @@
   display: none;
 }
 
-.email-sec {
+.email-sec, .whatsapp-sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,9 +499,18 @@
           align-items: center;
 }
 
-.email-sec p {
+.email-sec p, .whatsapp-sec p {
   color: #fff;
   font-weight: 500;
+}
+
+.whatsapp-sec {
+  background-color: #42b250;
+}
+
+.whatsapp-sec img {
+  width: 33px;
+  height: 33px;
 }
 
 .back-to-top {
@@ -602,7 +611,7 @@
   .team-sec .team-bg {
     bottom: 0;
   }
-  .email-sec {
+  .email-sec, .whatsapp-sec {
     width: 320px;
     height: 56px;
     padding: 0 50px;
@@ -610,6 +619,9 @@
         grid-template-columns: 66.665px 122.22px;
     -webkit-column-gap: 11.11px;
             column-gap: 11.11px;
+  }
+  .email-sec p, .whatsapp-sec p {
+    font-weight: bold;
   }
   .back-to-top a p {
     width: 240px;

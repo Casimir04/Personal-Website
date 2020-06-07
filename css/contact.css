@@ -69,6 +69,15 @@
   font-weight: 500;
 }
 
+.home main section .selection a:nth-last-child(2) {
+  background-color: #42b250;
+}
+
+.home main section .selection a:nth-last-child(2) img {
+  width: 33px;
+  height: 33px;
+}
+
 .home main section .selection a:last-child {
   padding: 0 9.9999vw;
   -ms-grid-columns: 13.3333vw 24.4444vw;

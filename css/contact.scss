@@ -51,6 +51,15 @@
           font-weight: 500;
         }
 
+        &:nth-last-child(2) {
+          img {
+            width: 33px;
+            height: 33px;
+          }
+
+          background-color: #42b250;
+        }
+
         &:last-child {
           padding: 0 9.9999vw;
           grid-template-columns: 13.3333vw 24.4444vw;
