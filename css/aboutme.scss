@@ -1,0 +1,141 @@
+@import "./imports";
+
+.aboutme-content {
+  margin: auto;
+  width: 86.6666vw;
+}
+
+.overview {
+  color: $white1;
+
+  h2 {
+    margin-bottom: 16px;
+    opacity: 0;
+    color: #776fd9;
+  }
+
+  p {
+    opacity: 0.9;
+    opacity: 0;
+  }
+
+  .portrait {
+    position: relative;
+    display: none;
+  }
+}
+
+.skills-sec {
+  margin-top: 56px;
+  position: relative;
+  width: 100vw;
+  padding: 24px 0;
+  color: $white1;
+
+  .heading {
+    opacity: 0;
+    color: #776fd9;
+  }
+
+  .skills-frontend {
+    display: grid;
+    grid-template-rows: auto auto;
+
+    h2 {
+      opacity: 0;
+    }
+  }
+
+  .skills-design {
+    @extend .skills-frontend;
+    margin-top: 72px;
+  }
+
+  .skills-lang {
+    @extend .skills-design;
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: 46.66vw 46.66vw;
+    column-gap: 2.2222vw;
+    row-gap: 16px;
+    color: $white22;
+  }
+
+  .skills-bg {
+    position: absolute;
+    top: 128px;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+@media screen and(min-width: 412px) {
+  .skills-bg {
+    transform: scale(1.125);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .skills-bg {
+    transform: scale(1.25);
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .aboutme-content {
+    width: 78.125vw;
+
+    .skills-bg {
+      top: 15vh;
+      transform: scale(1);
+      img {
+        width: 459px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+}
+
+@media screen and (min-width: 800px) {
+  .aboutme-content {
+    width: 70vw;
+
+    .skills-bg {
+      top: 96px;
+      transform: scale(1);
+      img {
+        width: 459px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .aboutme-content {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 35vw 55vw;
+    column-gap: 5vw;
+    margin-bottom: 24px;
+  }
+
+  .skills-sec {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .details {
+      grid-template-columns: 27vw 27vw;
+    }
+  }
+
+  @media screen and (min-height: 1160px) {
+    .aboutme-content {
+      min-height: 75vh;
+    }
+  }
+}

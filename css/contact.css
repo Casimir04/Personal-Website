@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+.home main {
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home main header {
+  z-index: 1;
+}
+
+.home main section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.home main section h1 {
+  margin-bottom: 41px;
+  font-size: 2em;
+  text-align: center;
+  color: #f4ecff;
+}
+
+.home main section .selection a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  padding: 0 12.2222vw;
+  width: 64vw;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #55586b;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8.8888vw 24.4444vw;
+      grid-template-columns: 8.8888vw 24.4444vw;
+  -webkit-column-gap: 4.4444vw;
+          column-gap: 4.4444vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home main section .selection a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home main section .selection a p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.home main section .selection a:last-child {
+  padding: 0 9.9999vw;
+  -ms-grid-columns: 13.3333vw 24.4444vw;
+      grid-template-columns: 13.3333vw 24.4444vw;
+  -webkit-column-gap: 2.2222vw;
+          column-gap: 2.2222vw;
+  background-color: #3700b3;
+}
+
+@media screen and (min-width: 412px) {
+  .home main section .selection a p {
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .home main section .selection a {
+    width: 320px;
+    height: 56px;
+    padding: 0 61.11px;
+    -ms-grid-columns: 44.44px 122.22px;
+        grid-template-columns: 44.44px 122.22px;
+    -webkit-column-gap: 22.22px;
+            column-gap: 22.22px;
+  }
+  .home main section .selection a:last-child {
+    padding: 0 50px;
+    -ms-grid-columns: 66.665px 122.22px;
+        grid-template-columns: 66.665px 122.22px;
+    -webkit-column-gap: 11.11px;
+            column-gap: 11.11px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

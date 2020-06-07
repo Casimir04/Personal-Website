@@ -1,0 +1,91 @@
+@import "./imports";
+
+.home main {
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+
+  header {
+    z-index: 1;
+  }
+
+  section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    h1 {
+      margin-bottom: 41px;
+      font-size: 2em;
+      text-align: center;
+      color: $white1;
+    }
+
+    .selection {
+      a {
+        display: flex;
+        margin-bottom: 16px;
+        padding: 0 12.2222vw;
+        width: 64vw;
+        height: 56px;
+        border-radius: 8px;
+        background-color: $dark2;
+        display: grid;
+        grid-template-columns: 8.8888vw 24.4444vw;
+        column-gap: 4.4444vw;
+        align-items: center;
+
+        img {
+          object-fit: cover;
+        }
+
+        p {
+          color: #fff;
+          font-weight: 500;
+        }
+
+        &:last-child {
+          padding: 0 9.9999vw;
+          grid-template-columns: 13.3333vw 24.4444vw;
+          column-gap: 2.2222vw;
+          background-color: $pri;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .home main section {
+    .selection a {
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .home main section {
+    .selection a {
+      width: 320px;
+      height: 56px;
+      padding: 0 61.11px;
+      grid-template-columns: 44.44px 122.22px;
+      column-gap: 22.22px;
+
+      &:last-child {
+        padding: 0 50px;
+        grid-template-columns: 66.665px 122.22px;
+        column-gap: 11.11px;
+      }
+    }
+  }
+}

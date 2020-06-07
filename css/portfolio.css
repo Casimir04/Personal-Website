@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+.home h1 {
+  color: #f4ecff;
+  text-align: center;
+  display: none;
+}
+
+.portfolio-con {
+  position: relative;
+  width: 320px;
+  margin: 16px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 400px 400px;
+      grid-template-rows: 400px 400px;
+  -ms-grid-columns: 320px;
+      grid-template-columns: 320px;
+  row-gap: 24px;
+  opacity: 0;
+}
+
+.portfolio-con .card {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 240px 160px;
+      grid-template-rows: 240px 160px;
+}
+
+.portfolio-con .card .image-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #101117;
+  border-radius: 16px 16px 0 0;
+}
+
+.portfolio-con .card .image-con img {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.portfolio-con .card .portfolio-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+  background-color: #f4ecff;
+  border-radius: 0 0 8px 8px;
+}
+
+.portfolio-con .card .portfolio-details div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 192px;
+}
+
+.portfolio-con .card .portfolio-details .desc {
+  margin: 16px 0;
+  font-weight: bold;
+}
+
+.portfolio-con .card .portfolio-details .tech {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 88px 88px;
+      grid-template-columns: 88px 88px;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+@media screen and (min-width: 412px) {
+  .portfolio-con {
+    width: 366px;
+    -ms-grid-rows: 460px 460px;
+        grid-template-rows: 460px 460px;
+    -ms-grid-columns: 366px;
+        grid-template-columns: 366px;
+  }
+  .portfolio-con .card {
+    -ms-grid-rows: 276px 184px;
+        grid-template-rows: 276px 184px;
+  }
+  .portfolio-con .portfolio-details div {
+    width: 400px;
+  }
+  .portfolio-con .portfolio-details .tech {
+    -ms-grid-columns: 200px 200px;
+        grid-template-columns: 200px 200px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .portfolio-con {
+    -ms-grid-rows: 517.5px 517.5px;
+        grid-template-rows: 517.5px 517.5px;
+  }
+  .portfolio-con .card {
+    -ms-grid-rows: 310.5px 207px;
+        grid-template-rows: 310.5px 207px;
+  }
+  .portfolio-con .portfolio-details div {
+    width: 400px;
+  }
+  .portfolio-con .portfolio-details .tech {
+    -ms-grid-columns: 200px 200px;
+        grid-template-columns: 200px 200px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .portfolio-con {
+    -ms-grid-rows: 646.875px 646.875px;
+        grid-template-rows: 646.875px 646.875px;
+  }
+  .portfolio-con .card {
+    -ms-grid-rows: 388.125px 258.75px;
+        grid-template-rows: 388.125px 258.75px;
+  }
+  .portfolio-con .portfolio-details div {
+    width: 400px;
+  }
+  .portfolio-con .portfolio-details .tech {
+    -ms-grid-columns: 200px 200px;
+        grid-template-columns: 200px 200px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .home h1 {
+    text-align: left;
+    width: 780px;
+    margin: auto;
+  }
+  .portfolio-con {
+    width: 780px;
+    -ms-grid-rows: 646.875px;
+        grid-template-rows: 646.875px;
+    -ms-grid-columns: 366px 366px;
+        grid-template-columns: 366px 366px;
+    -webkit-column-gap: 48px;
+            column-gap: 48px;
+  }
+}
+
+@media screen and (min-width: 900px) and (min-height: 1040px) {
+  .portfolio-con {
+    height: 70vh;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */

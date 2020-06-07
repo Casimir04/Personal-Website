@@ -1,0 +1,150 @@
+@import "./imports";
+
+.home {
+  h1 {
+    color: $white1;
+    text-align: center;
+    display: none;
+  }
+}
+
+.portfolio-con {
+  position: relative;
+  width: 320px;
+  margin: 16px auto;
+  display: grid;
+  grid-template-rows: 400px 400px;
+  grid-template-columns: 320px;
+  row-gap: 24px;
+  opacity: 0;
+
+  .card {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 240px 160px;
+
+    .image-con {
+      display: flex;
+      align-items: center;
+      background-color: #101117;
+      border-radius: 16px 16px 0 0;
+
+      img {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+      }
+    }
+
+    .portfolio-details {
+      display: flex;
+      justify-content: center;
+      color: #000;
+      background-color: $white1;
+      border-radius: 0 0 8px 8px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 192px;
+      }
+
+      .desc {
+        margin: 16px 0;
+        font-weight: bold;
+      }
+
+      .tech {
+        display: grid;
+        grid-template-columns: 88px 88px;
+        column-gap: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .portfolio-con {
+    width: 366px;
+    grid-template-rows: 460px 460px;
+    grid-template-columns: 366px;
+
+    .card {
+      grid-template-rows: 276px 184px;
+    }
+
+    .portfolio-details {
+      div {
+        width: 400px;
+      }
+
+      .tech {
+        grid-template-columns: 200px 200px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .portfolio-con {
+    grid-template-rows: 517.5px 517.5px;
+
+    .card {
+      grid-template-rows: 310.5px 207px;
+    }
+
+    .portfolio-details {
+      div {
+        width: 400px;
+      }
+
+      .tech {
+        grid-template-columns: 200px 200px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .portfolio-con {
+    grid-template-rows: 646.875px 646.875px;
+
+    .card {
+      grid-template-rows: 388.125px 258.75px;
+    }
+
+    .portfolio-details {
+      div {
+        width: 400px;
+      }
+
+      .tech {
+        grid-template-columns: 200px 200px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .home h1 {
+    text-align: left;
+    width: 780px;
+    margin: auto;
+  }
+
+  .portfolio-con {
+    width: 780px;
+    grid-template-rows: 646.875px;
+    grid-template-columns: 366px 366px;
+    column-gap: 48px;
+  }
+
+  @media screen and (min-height: 1040px) {
+    .portfolio-con {
+      height: 70vh;
+    }
+  }
+}

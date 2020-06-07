@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+.aboutme-content {
+  margin: auto;
+  width: 86.6666vw;
+}
+
+.overview {
+  color: #f4ecff;
+}
+
+.overview h2 {
+  margin-bottom: 16px;
+  opacity: 0;
+  color: #776fd9;
+}
+
+.overview p {
+  opacity: 0.9;
+  opacity: 0;
+}
+
+.overview .portrait {
+  position: relative;
+  display: none;
+}
+
+.skills-sec {
+  margin-top: 56px;
+  position: relative;
+  width: 100vw;
+  padding: 24px 0;
+  color: #f4ecff;
+}
+
+.skills-sec .heading {
+  opacity: 0;
+  color: #776fd9;
+}
+
+.skills-sec .skills-frontend, .skills-sec .skills-design, .skills-sec .skills-lang {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.skills-sec .skills-frontend h2, .skills-sec .skills-design h2, .skills-sec .skills-lang h2 {
+  opacity: 0;
+}
+
+.skills-sec .skills-design, .skills-sec .skills-lang {
+  margin-top: 72px;
+}
+
+.skills-sec .details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 46.66vw 46.66vw;
+      grid-template-columns: 46.66vw 46.66vw;
+  -webkit-column-gap: 2.2222vw;
+          column-gap: 2.2222vw;
+  row-gap: 16px;
+  color: #a6a5b2;
+}
+
+.skills-sec .skills-bg {
+  position: absolute;
+  top: 128px;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (min-width: 412px) {
+  .skills-bg {
+    -webkit-transform: scale(1.125);
+            transform: scale(1.125);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .skills-bg {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .aboutme-content {
+    width: 78.125vw;
+  }
+  .aboutme-content .skills-bg {
+    top: 15vh;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .aboutme-content .skills-bg img {
+    width: 459px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .aboutme-content {
+    width: 70vw;
+  }
+  .aboutme-content .skills-bg {
+    top: 96px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .aboutme-content .skills-bg img {
+    width: 459px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .aboutme-content {
+    width: 90vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 35vw 55vw;
+        grid-template-columns: 35vw 55vw;
+    -webkit-column-gap: 5vw;
+            column-gap: 5vw;
+    margin-bottom: 24px;
+  }
+  .skills-sec {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .skills-sec .details {
+    -ms-grid-columns: 27vw 27vw;
+        grid-template-columns: 27vw 27vw;
+  }
+}
+
+@media screen and (min-width: 900px) and (min-height: 1160px) {
+  .aboutme-content {
+    min-height: 75vh;
+  }
+}
+/*# sourceMappingURL=aboutme.css.map */
