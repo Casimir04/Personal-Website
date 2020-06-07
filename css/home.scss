@@ -221,6 +221,13 @@
       border-radius: 16px;
       background-color: $black4;
 
+      img {
+        width: 80%;
+        height: 50%;
+        object-fit: contain;
+        margin: auto;
+      }
+
       &:nth-child(2) {
         img {
           margin: auto;
@@ -496,6 +503,10 @@
       .team-card {
         grid-template-rows: 120px 60px;
 
+        &:nth-child(2) img {
+          margin-top: 28px;
+        }
+
         &:last-child {
           grid-template-rows: 180px;
           background-color: #80f4ff;
@@ -745,9 +756,6 @@
     .skills-design {
       margin: 0;
     }
-
-    .skills-bg {
-    }
   }
 
   .focus-sec {
@@ -781,6 +789,14 @@
       grid-template-columns: 225px 225px 225px 225px;
       grid-template-rows: auto;
       gap: 16px;
+
+      img {
+        transform: scale(1.5);
+      }
+
+      .team-card:nth-child(2) img {
+        margin-top: 40px;
+      }
     }
     .team-bg {
       display: none;
